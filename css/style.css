@@ -1,0 +1,53 @@
+.searchTrain {
+  top: 10%;
+  overflow: hidden;
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 80px;
+  /* z-index: 1 */
+  background: #b9bbdf;
+  border-radius: 15px;
+}
+
+.inputBox {
+  margin: 30px;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.col-lg-6 {
+  line-height: 1.5;
+}
+
+.trainpics {
+  margin-top: 20px;
+}
+
+.box-class {
+  background: #b9bbdf;
+  border-radius: 15px;
+  padding: 20px;
+  width: 30%;
+  margin: 2%;
+}
+.holidayHeading {
+  font-size: 5rem;
+  color: #f58634;
+  text-shadow: 2px 2px black;
+  text-align: center;
+}
+
+.HolidayImages {
+  width: 100%;
+}
+
+.holidayContainer {
+  padding-left: 14%;
+  padding-right: 4%;
+}
+/* #colHoliday {
+  max-width: 29.333%;
+} */
