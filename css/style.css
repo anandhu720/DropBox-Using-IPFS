@@ -48,6 +48,34 @@
   padding-left: 14%;
   padding-right: 4%;
 }
-/* #colHoliday {
-  max-width: 29.333%;
-} */
+
+#grad {
+  background-image: linear-gradient(to right, #faf3e0, #98ded9);
+}
+
+#grad-holiday {
+  background-image: linear-gradient(to right, #dbf6e9, #cee6b4);
+}
+
+h1,
+h4 {
+  font-family: "Dela Gothic One", cursive;
+}
+
+.findingHeading {
+  padding: 10%;
+}
+
+.finding {
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 3%;
+}
+.padd {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.hotel {
+  text-align: center;
+}

@@ -17,8 +17,20 @@
 
     <!-- Latest compiled JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- fonts google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script src="https://use.fontawesome.com/b8d0e2b01b.js"></script>
   </head>
-  <body>
+  <body id="gradBody">
     <section id="title">
       <!-- Nav Bar -->
       <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
@@ -67,7 +79,7 @@
       <div class="condainer-fluid">
         <div class="row">
           <div class="col-lg-4">
-            <form class="searchTrain">
+            <form class="searchTrain" id="grad">
               <div class="mb-3 inputBox">
                 <h1>Book Your Tickets Here</h1>
                 <input type="text" class="form-control" placeholder="From" />
@@ -76,7 +88,8 @@
                 <input type="text" class="form-control" placeholder="To" />
               </div>
               <div class="mb-3 inputBox">
-                Date Of Travelling : <br />
+                <h4>Date Of Travelling :</h4>
+                <br />
                 <input
                   type="date"
                   class="form-control"
@@ -84,6 +97,7 @@
                 />
               </div>
               <div class="mb-3 inputBox">
+                <h4>Select Class</h4>
                 <select class="form-select" aria-label="Default select example">
                   <option selected>Select Class</option>
                   <option value="1">Frist</option>
@@ -164,7 +178,7 @@
           <h1 class="holidayHeading">Holidays</h1>
         </div>
         <div class="row holidayContainer">
-          <div id="colHoliday" class="col-lg-3 box-class">
+          <div id="grad-holiday" class="col-lg-3 box-class">
             <div class="">
               <img
                 class="HolidayImages"
@@ -182,7 +196,7 @@
               </p>
             </div>
           </div>
-          <div id="colHoliday" class="col-lg-3 box-class">
+          <div id="grad-holiday" class="col-lg-3 box-class">
             <div class="">
               <img
                 class="HolidayImages"
@@ -204,7 +218,7 @@
               </p>
             </div>
           </div>
-          <div id="colHoliday" class="col-lg-3 box-class">
+          <div id="grad-holiday" class="col-lg-3 box-class">
             <div class="">
               <img class="HolidayImages" src="images/train2.png" alt="array" />
             </div>
@@ -215,7 +229,7 @@
               <p>I am very good at DataStructures and Algorithms in C/C++</p>
             </div>
           </div>
-          <div id="colHoliday" class="col-lg-3 box-class">
+          <div id="grad-holiday" class="col-lg-3 box-class">
             <div class="">
               <img class="HolidayImages" src="images/train2.png" alt="array" />
             </div>
@@ -226,7 +240,7 @@
               <p>I am very good at DataStructures and Algorithms in C/C++</p>
             </div>
           </div>
-          <div id="colHoliday" class="col-lg-3 box-class">
+          <div id="grad-holiday" class="col-lg-3 box-class">
             <div class="">
               <img class="HolidayImages" src="images/train2.png" alt="array" />
             </div>
@@ -237,7 +251,7 @@
               <p>I am very good at DataStructures and Algorithms in C/C++</p>
             </div>
           </div>
-          <div id="colHoliday" class="col-lg-3 box-class">
+          <div id="grad-holiday" class="col-lg-3 box-class">
             <div class="">
               <img class="HolidayImages" src="images/train2.png" alt="array" />
             </div>
@@ -246,6 +260,69 @@
             </div>
             <div class="">
               <p>I am very good at DataStructures and Algorithms in C/C++</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="Finding">
+      <div class="condainer-fluid">
+        <div class="findingHeading">
+          <h1 class="holidayHeading">
+            Have you not found the right one? Find a service suitable for you
+            here.
+          </h1>
+        </div>
+        <div class="padd">
+          <div class="row">
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-plane fa-5x"></i></a>
+              </div>
+              <h4>Flights</h4>
+            </div>
+
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"> <i class="fa fa-hotel fa-5x"></i></a>
+              </div>
+              <h4 class="hotel">Hotel</h4>
+            </div>
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-signal fa-5x"></i></a>
+              </div>
+              <h4>Rail Dristi</h4>
+            </div>
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-apple fa-5x"></i></a>
+              </div>
+              <h4>E-Catering</h4>
+            </div>
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-bus fa-5x"></i></a>
+              </div>
+              <h4 class="hotel">Bus</h4>
+            </div>
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-train fa-5x"></i></a>
+              </div>
+              <h4 class="hotel">Tourist</h4>
+            </div>
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-umbrella fa-5x"></i></a>
+              </div>
+              <h4 class="hotel">Pacakges</h4>
+            </div>
+            <div class="finding">
+              <div class="col-lg-3">
+                <a href="#"><i class="fa fa-image fa-5x"></i></a>
+              </div>
+              <h4 class="hotel">Gallery</h4>
             </div>
           </div>
         </div>
