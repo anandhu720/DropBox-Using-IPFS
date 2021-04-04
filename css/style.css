@@ -57,6 +57,17 @@
   background-image: linear-gradient(to right, #dbf6e9, #cee6b4);
 }
 
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  display: block;
+}
+
 h1,
 h4 {
   font-family: "Dela Gothic One", cursive;
