@@ -57,6 +57,11 @@
   background-image: linear-gradient(to right, #dbf6e9, #cee6b4);
 }
 
+#carouselExampleControls {
+  margin-top: 54px;
+  margin-right: 61px;
+}
+
 h1,
 h4 {
   font-family: "Dela Gothic One", cursive;
@@ -84,11 +89,6 @@ h4 {
 
 .hotel {
   text-align: center;
-}
-
-#carouselExampleControls {
-  margin-top: 54px;
-  margin-right: 61px;
 }
 
 /* footer */
