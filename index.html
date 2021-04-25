@@ -1,469 +1,273 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title>Railway Project</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- bootstrap css -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Railway System</title>
+        <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- font style    -->
+      <link
+    href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+    rel="stylesheet"
+  />
 
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- css style  -->
+    <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/slideshow.css">
+    <link rel="stylesheet" href="css/offer.css">
+    <link rel="stylesheet" href="css/fq-section.css">
+    <link rel="stylesheet" href="css/social.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
 
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <!-- fonts google -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap"
-      rel="stylesheet"
-    />
-    <!-- font awesome -->
-    <script src="https://use.fontawesome.com/b8d0e2b01b.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-  </head>
-  <body id="gradBody">
-    <section id="title">
-      <!-- Nav Bar -->
-      <nav class="navbar bg-dark navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="#title">Railway Managment System</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-          <div class="condainer-fluid"></div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#title"> Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Meals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#holidayPackages">Holiday Package</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="mailto:railwaySystem@gmail.com?subject=feedback"
-                ><i class="fa fa-envelope-o" aria-hidden="true"></i> Contact
-                Us</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+    <section class="navbar">
+        <div class="topnav" id="myTopnav">
+          <img src="images/logo.png" alt="icon" height="50px" width="70px">
+            <a href="#">Home</a>
+            <a href="#">Meals</a>
+            <a href="#">Holiday Packages</a>
+            <a href="">Announcements</a>
+            <a href="#">Condact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+          </div>
+    </section>
 
-      <!-- Title -->
-      <div class="condainer-fluid">
-        <div class="row">
-          <div class="col-lg-4">
-            <form class="searchTrain" id="grad">
-              <div>
-                <h1>Book Your Tickets Here</h1>
-              </div>
-              <div class="mb-3 inputBox">
-                <input type="text" class="form-control" placeholder="From" />
-              </div>
-              <div class="mb-3 inputBox">
-                <input type="text" class="form-control" placeholder="To" />
-              </div>
-              <div class="mb-3 inputBox">
-                <h4>Date Of Travelling :</h4>
-                <br />
+    <section class="main">
+      <section class="">
+        <div class="column">
+            <form class="input-form">
+                <h1 class="form-title">Search For Ticket Here</h1>
+                <input type="text" id="fname" name="fname" placeholder="From"><br>
+                <input type="text" id="fname" name="fname" placeholder="To">
+                <h4 class="form-title1">Date Of Travelling :</h4>
                 <input
                   type="date"
-                  class="form-control"
+                  id="fname"
                   placeholder="DD-MM-YYYY"
                 />
-              </div>
-              <div class="mb-3 inputBox">
-                <h4>Select Class</h4>
-                <select class="form-select" aria-label="Default select example">
-                  <option selected>Select Class</option>
-                  <option value="1">Frist</option>
-                  <option value="2">Ac</option>
-                  <option value="3">Sleeper</option>
+                  <h4 class="form-title1">Select Class</h4>
+                <select id="fname" aria-label="Default select example">
+                <option value="1">Frist</option>
+                <option value="2">Ac</option>
+                <option value="3">Sleeper</option>
                 </select>
-              </div>
-
-              <button type="submit" class="btn btn-primary" href="#">
+                <br>
+                <button type="submit" class="btn" href="#">
                 Submit
               </button>
             </form>
-          </div>
-          <div class="col-lg-8 trainpics">
-            <div
-              id="carouselExampleControls"
-              class="carousel slide"
-              data-ride="carousel"
-              data-interval="3000"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="images/train.jpg"
-                    alt="train"
-                    height="500px"
-                    width="100%"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/train1.jpg"
-                    alt="train"
-                    height="500px"
-                    width="100%"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="images/train2.png"
-                    alt="train"
-                    height="500px"
-                    width="100%"
-                  />
-                </div>
-              </div>
-              <a
-                class="carousel-control-prev"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a
-                class="carousel-control-next"
-                href="#carouselExampleControls"
-                role="button"
-                data-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </div>
-          </div>
         </div>
+
+      <div class="column1">
+        <section class="slideshow">
+          <div class="slide">
+              <img class="mySlides" src="images/train.jpg">
+              <img class="mySlides" src="images/train4.jpeg">
+              <img class="mySlides" src="images/train2.jpg">
+              <img class="mySlides" src="images/train1.jpg">
+              <img class="mySlides" src="images/train6.jpeg">
+          </div>
+      </section>
+
+      <h1 class="holiday-heading">Holiday Packages</h1>
+
       </div>
+
     </section>
 
-    <section id="holidayPackages">
-      <div class="condainer-fluid">
-        <div class="holidayheading">
-          <h1 class="holidayHeading">Holidays</h1>
-        </div>
-        <div class="row holidayContainer">
-          <div id="grad-holiday" class="col-lg-3 box-class">
-            <div class="">
-              <img
-                class="HolidayImages"
-                src="images/train2.png"
-                alt="computer"
-              />
-            </div>
-            <div>
-              <h3 class="">LOreum 1</h3>
-            </div>
-            <div class="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                nulla facilisi morbi tempus iaculis. Mauris pharetra et ultrices
-                neque ornare aenean euismod. Facilisis magna etiam tempor orci
-                eu. Diam phasellus vestibulum lorem sed risus. Amet consectetur
-                adipiscing elit pellentesque habitant. Diam quis enim lobortis
-                scelerisque fermentum dui faucibus in. Egestas egestas fringilla
-                phasellus faucibus scelerisque eleifend. Nibh mauris cursus
-                mattis molestie a iaculis. A scelerisque purus semper eget duis
-                at.
-              </p>
-            </div>
-            <button
-              type="button"
-              name="button"
-              onclick="window.location.href='holiday/1.html'"
-            >
-              Read More >>
-            </button>
+    <section class="offers">
+      <div class="col">
+        <div class="card">  <img src="images/train6.jpeg" class="offer-img" style="width:100%">
+          <div class="container">
+            <h2><b>Lorem ipsum dolor</b></h2>
+            <div class="holiday-exp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor dignissim convallis aenean. Nisi vitae suscipit tellus mauris a diam maecenas. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.
           </div>
-          <div id="grad-holiday" class="col-lg-3 box-class">
-            <div class="">
-              <img class="HolidayImages" src="images/train2.png" alt="array" />
-            </div>
-            <div class="">
-              <h3 class="">Loreum</h3>
-            </div>
-            <div class="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                nulla facilisi morbi tempus iaculis. Mauris pharetra et ultrices
-                neque ornare aenean euismod. Facilisis magna etiam tempor orci
-                eu. Diam phasellus vestibulum lorem sed risus. Amet consectetur
-                adipiscing elit pellentesque habitant. Diam quis enim lobortis
-                scelerisque fermentum dui faucibus in. Egestas egestas fringilla
-                phasellus faucibus scelerisque eleifend. Nibh mauris cursus
-                mattis molestie a iaculis. A scelerisque purus semper eget duis
-                at.
-              </p>
-            </div>
-            <button
-              type="button"
-              name="button"
-              onclick="window.location.href='holiday/1.html'"
-            >
-              Read More >>
-            </button>
           </div>
-          <div id="grad-holiday" class="col-lg-3 box-class">
-            <div class="">
-              <img class="HolidayImages" src="images/train2.png" alt="array" />
-            </div>
-            <div class="">
-              <h3 class="">Loreum</h3>
-            </div>
-            <div class="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                nulla facilisi morbi tempus iaculis. Mauris pharetra et ultrices
-                neque ornare aenean euismod. Facilisis magna etiam tempor orci
-                eu. Diam phasellus vestibulum lorem sed risus. Amet consectetur
-                adipiscing elit pellentesque habitant. Diam quis enim lobortis
-                scelerisque fermentum dui faucibus in. Egestas egestas fringilla
-                phasellus faucibus scelerisque eleifend. Nibh mauris cursus
-                mattis molestie a iaculis. A scelerisque purus semper eget duis
-                at.
-              </p>
-            </div>
-            <button
-              type="button"
-              name="button"
-              onclick="window.location.href='holiday/1.html'"
-            >
-              Read More >>
-            </button>
-          </div>
-          <div id="grad-holiday" class="col-lg-3 box-class">
-            <div class="">
-              <img class="HolidayImages" src="images/train2.png" alt="array" />
-            </div>
-            <div class="">
-              <h3 class="">Loreum</h3>
-            </div>
-            <div class="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                nulla facilisi morbi tempus iaculis. Mauris pharetra et ultrices
-                neque ornare aenean euismod. Facilisis magna etiam tempor orci
-                eu. Diam phasellus vestibulum lorem sed risus. Amet consectetur
-                adipiscing elit pellentesque habitant. Diam quis enim lobortis
-                scelerisque fermentum dui faucibus in. Egestas egestas fringilla
-                phasellus faucibus scelerisque eleifend. Nibh mauris cursus
-                mattis molestie a iaculis. A scelerisque purus semper eget duis
-                at.
-              </p>
-            </div>
-            <button
-              type="button"
-              name="button"
-              onclick="window.location.href='holiday/1.html'"
-            >
-              Read More >>
-            </button>
-          </div>
-          <div id="grad-holiday" class="col-lg-3 box-class">
-            <div class="">
-              <img class="HolidayImages" src="images/train2.png" alt="array" />
-            </div>
-            <div class="">
-              <h3 class="">Loreum</h3>
-            </div>
-            <div class="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                nulla facilisi morbi tempus iaculis. Mauris pharetra et ultrices
-                neque ornare aenean euismod. Facilisis magna etiam tempor orci
-                eu. Diam phasellus vestibulum lorem sed risus. Amet consectetur
-                adipiscing elit pellentesque habitant. Diam quis enim lobortis
-                scelerisque fermentum dui faucibus in. Egestas egestas fringilla
-                phasellus faucibus scelerisque eleifend. Nibh mauris cursus
-                mattis molestie a iaculis. A scelerisque purus semper eget duis
-                at.
-              </p>
-            </div>
-            <button
-              type="button"
-              name="button"
-              onclick="window.location.href='holiday/1.html'"
-            >
-              Read More >>
-            </button>
-          </div>
-          <div id="grad-holiday" class="col-lg-3 box-class">
-            <div class="">
-              <img class="HolidayImages" src="images/train2.png" alt="array" />
-            </div>
-            <div class="">
-              <h3 class="">Loreum</h3>
-            </div>
-            <div class="">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet
-                nulla facilisi morbi tempus iaculis. Mauris pharetra et ultrices
-                neque ornare aenean euismod. Facilisis magna etiam tempor orci
-                eu. Diam phasellus vestibulum lorem sed risus. Amet consectetur
-                adipiscing elit pellentesque habitant. Diam quis enim lobortis
-                scelerisque fermentum dui faucibus in. Egestas egestas fringilla
-                phasellus faucibus scelerisque eleifend. Nibh mauris cursus
-                mattis molestie a iaculis. A scelerisque purus semper eget duis
-                at.
-              </p>
-            </div>
-            <button
-              type="button"
-              name="button"
-              onclick="window.location.href='holiday/1.html'"
-            >
-              Read More >>
-            </button>
-          </div>
-        </div>
+          <button class="offer-btn">Read More</button>
       </div>
-    </section>
-    <section class="Finding">
-      <div class="condainer-fluid">
-        <div class="findingHeading">
-          <h1 class="holidayHeading">
-            Have you not found the right one? Find a service suitable for you
-            here.
-          </h1>
-        </div>
-        <div class="padd">
-          <div class="row">
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-plane fa-5x"></i></a>
+      </div>
+      <div class="col">
+        <div class="card">  <img src="images/train7.jpeg" class="offer-img" style="width:100%">
+          <div class="container">
+            <h2><b>Lorem ipsum dolor</b></h2>
+            <div class="holiday-exp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor dignissim convallis aenean. Nisi vitae suscipit tellus mauris a diam maecenas. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.
+          </div>
+          </div>
+          <button class="offer-btn">Read More</button>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card">  <img src="images/train5.jpeg" class="offer-img" style="width:100%">
+          <div class="container">
+            <h2><b>Lorem ipsum dolor</b></h2>
+            <div class="holiday-exp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor dignissim convallis aenean. Nisi vitae suscipit tellus mauris a diam maecenas. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.
+          </div>
+          </div>
+          <button class="offer-btn">Read More</button>
+      </div>
+      </div>
+      <div class="col">
+        <div class="card">  <img src="images/train1.jpg" class="offer-img" style="width:100%">
+          <div class="container">
+            <h2><b>Lorem ipsum dolor</b></h2>
+            <div class="holiday-exp">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor dignissim convallis aenean. Nisi vitae suscipit tellus mauris a diam maecenas. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.
+          </div>
+          </div>
+          <button class="offer-btn">Read More</button>
+      </div>
+      </div>
+      <div class="col">
+          <div class="card">  <img src="images/train.jpg" class="offer-img" style="width:100%">
+            <div class="container">
+              <h2><b>Lorem ipsum dolor</b></h2>
+              <div class="holiday-exp">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor dignissim convallis aenean. Nisi vitae suscipit tellus mauris a diam maecenas. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.
               </div>
-              <h4>Flights</h4>
             </div>
+            <button class="offer-btn">Read More</button>
+        </div>
+        </div>
+        <div class="col">
+          <div class="card">  <img src="images/train2.jpg" class="offer-img" style="width:100%">
+            <div class="container">
+              <h2><b>Lorem ipsum dolor</b></h2>
+              <div class="holiday-exp">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac tortor dignissim convallis aenean. Nisi vitae suscipit tellus mauris a diam maecenas. Mus mauris vitae ultricies leo integer malesuada nunc vel risus.
+              </div>
+            </div>
+            <button class="offer-btn">Read More</button>
+        </div>
+        </div>
+        <button class="offer-btn">Explore More</button>
+    </section>
 
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"> <i class="fa fa-hotel fa-5x"></i></a>
-              </div>
-              <h4 class="hotel">Hotel</h4>
+    <section class="fq">
+        <div class="fq-section">
+        <div class="text-container">
+            <div class="section-title text-center">
+                <h1 style="font-size:4rem;">Announcements</h1>
             </div>
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-signal fa-5x"></i></a>
-              </div>
-              <h4>Rail Dristi</h4>
+            <div class="fq-box">
+                <ol>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                    <li>
+                        <h2>Lorem ipsum dolor</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Enim diam vulputate ut pharetra sit. Varius duis at consectetur lorem donec massa sapien faucibus et. Cras semper auctor neque vitae tempus quam.</p>
+                    </li>
+                </ol>
             </div>
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-apple fa-5x"></i></a>
-              </div>
-              <h4>E-Catering</h4>
-            </div>
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-bus fa-5x"></i></a>
-              </div>
-              <h4 class="hotel">Bus</h4>
-            </div>
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-train fa-5x"></i></a>
-              </div>
-              <h4 class="hotel">Tourist</h4>
-            </div>
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-umbrella fa-5x"></i></a>
-              </div>
-              <h4 class="hotel">Pacakges</h4>
-            </div>
-            <div class="finding">
-              <div class="col-lg-3">
-                <a href="#"><i class="fa fa-image fa-5x"></i></a>
-              </div>
-              <h4 class="hotel">Gallery</h4>
-            </div>
-          </div>
         </div>
-      </div>
+        </div>
     </section>
+    
+    <section class="social-section">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-youtube"></a>
+      <a href="#" class="fa fa-instagram"></a>
+    </section>
+
     <div class="footer">
       <div class="contain">
         <div class="col">
-          <h1>Basic Things</h1>
+          <h1>Lorem ipsum dolor
+          </h1>
           <ul>
-            <li>Trains</li>
-            <li>General Information</li>
-            <li>Important Information</li>
-            <li>Agents</li>
-            <li>Enquiries</li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
+            <li>Lorem ipsum</li>
           </ul>
         </div>
         <div class="col">
-          <h1>Rules</h1>
+          <h1>Lorem ipsum dolor</h1>
           <ul>
-            <li>How To</li>
-            <li>Offical App</li>
-            <li>Refund Rules</li>
-            <li>eWallet</li>
-            <li>Online Bookings</li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
           </ul>
         </div>
         <div class="col">
-          <h1>Account</h1>
+          <h1>Lorem ipsum dolor
+          </h1>
           <ul>
-            <li>Loyalty Program</li>
-            <li>About us</li>
-            <li>Train Zones</li>
-            <li>Integration Policy</li>
-            <li>Social Media</li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
           </ul>
         </div>
         <div class="col">
-          <h1>Facilites</h1>
+          <h1>Lorem ipsum dolor</h1>
           <ul>
-            <li>Advertise with us</li>
-            <li>Holiday Pacakges</li>
-            <li>MP/Ex-MP Ticket Booking</li>
-            <li>For Newly Migrated Agents</li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum
+            </li>
+            <li>Lorem ipsum 
+            </li>
           </ul>
         </div>
       </div>
     </div>
-  </body>
+
+
+
+    </section>
+
+    <script src="js/slideshow.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
 </html>
