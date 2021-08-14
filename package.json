@@ -1,0 +1,19 @@
+{
+  "name": "dropbox-ipfs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anandhu720/dropbox-ipfs.git"
+  },
+  "author": "anandhu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anandhu720/dropbox-ipfs/issues"
+  },
+  "homepage": "https://github.com/anandhu720/dropbox-ipfs#readme"
+}
